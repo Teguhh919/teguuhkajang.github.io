@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.containercontact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: 100Vh;
+    background-color: rgb(100, 100, 100);
+    border-radius: 10px;
+}
+
+.containercontact h1 {
+    text-align: center;
+}
+
+.containercontact .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containercontact .email input {
+    width: 80%;
+    height: 30px;
+}
+
+.containercontact .email1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containercontact .email1 input {
+    width: 80%;
+    height: 100px;
+}
+
+.containercontact a button {
+    margin: 5% 10%;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-image: linear-gradient(to bottom, rgb(108, 41, 51), rgb(107, 31, 48), rgb(135, 60, 80));
+    border-radius: 10px;
+}

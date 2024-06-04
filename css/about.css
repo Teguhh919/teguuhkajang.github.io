@@ -1,0 +1,140 @@
+.containerabout {
+    margin: 3rem 0;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerabout .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.containerabout .about h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.containerabout .about p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container h1,
+h4 {
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.containerhome {
+    width: 600px;
+    margin: 1rem 0;
+    border: 10px solid linear-gradient(to right, rgb(189, 1, 1), rgb(79, 0, 0));
+    background-image: linear-gradient(to right, rgb(88, 36, 53), rgb(82, 38, 41), rgb(90, 42, 47));
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-list {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-title {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0), rgb(85, 25, 48));
+    top: 150px;
+    transition: all 0.4s ease-in;
+}
+
+
+.img-title h3 {
+    position: relative;
+    top: 90px;
+    line-height: 2px;
+    color: #fff;
+    text-shadow: 1px 1px rgba(5, 5, 5, .7);
+}
+
+.img-list:hover .img-title {
+    top: 0;
+    transition: all 0.4s ease-out;
+}
+
+.img-list img {
+    width: 200px;
+    height: 200px;
+    transform: scale(1);
+    transition: all .5s ease-in;
+}
+
+.img-list:hover img {
+    transform: scale(1.1);
+    transition: all .5s ease-out;
+}
+
+a {
+    line-height: 0;
+}
+
+.onslick {
+    position: fixed;
+    background: rgba(5, 5, 5, .7);
+    top: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    width: 0;
+    height: 0;
+}
+
+.onslick img {
+    width: 0;
+    height: 0;
+    transition: all .3s ease-out;
+}
+
+.onslick:target {
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+}
+
+.onslick:target img {
+    padding: 25vh 0;
+    width: 300px;
+    height: 300px;
+    transition: all .3s ease-in;
+}
+
+
+@media screen and (max-width:768px) {
+    .containerhome {
+        width: 300px;
+    }
+
+    .img-list img {
+        width: 100px;
+        height: 100px;
+    }
+
+}

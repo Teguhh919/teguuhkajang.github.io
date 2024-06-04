@@ -1,0 +1,237 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, rgb(239, 219, 170), rgb(190, 184, 126), rgb(190, 179, 127));
+    ;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom, rgb(108, 41, 51), rgb(107, 31, 48), rgb(135, 60, 80));
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.navbar .logo .foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    margin: 0 0.5rem;
+    background-image: linear-gradient(to bottom, rgb(29, 55, 93), rgb(36, 71, 123), rgb(59, 87, 135));
+    border-radius: 50%;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar .logo h1 a {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar .navbar-nav li a {
+    margin: 0 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.navbar .navbar-nav li a:hover {
+    color: rgb(0, 57, 150);
+    transition: all 0.2s ease-in-out;
+}
+
+/* CLOSING */
+.closing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.closing .blog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 120px;
+    background-color: #551033;
+    border-radius: 10px;
+}
+
+.closing .blog .ikom {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    margin: 0 2rem;
+}
+
+.closing .blog .ikom h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.closing .blog .ikom h1 span {
+    font-size: 10px;
+}
+
+.closing .blog .ikom img {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.closing .titt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.closing .titt h1 {
+    color: aliceblue;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.closing .titt h1 span {
+    background: linear-gradient(to bottom, #50232b, #492323);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.closing .titt h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+.closing .titt .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.closing .titt .icon img {
+    width: 40px;
+    height: 40px;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.closing .titt p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+}
+
+/* CLOSING */
+
+
+/* none */
+.navbar .toggle-menu {
+    display: none;
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    .navbar .toggle-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        margin: 0 1rem;
+    }
+
+    .navbar .toggle-menu span {
+        display: flex;
+        width: 20px;
+        height: 2px;
+        margin: 2px 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navbar .navbar-nav {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -300px;
+        background-image: linear-gradient(to bottom, rgb(106, 41, 51), rgb(107, 31, 48), rgb(135, 60, 80));
+        right: 0;
+    }
+
+    .navbar .navbar-nav.show {
+        top: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar .navbar-nav li {
+        margin: 20px 0;
+    }
+
+    /* CLOSING NAVBAR */
+
+    .closing .blog {
+        width: 90%;
+        height: 90px;
+    }
+
+
+    .closing .blog .ikom h1 {
+        font-size: 8px;
+    }
+
+    .closing .blog .ikom h1 span {
+        font-size: 6px;
+    }
+
+    .closing .blog .ikom img {
+        width: 25px;
+        height: 25px;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+/*       WARNA GRADIASI  
+background-image: linear-gradient(90deg, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            background-clip: text; 
+            
+            list-style-type*/

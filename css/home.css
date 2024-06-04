@@ -1,0 +1,131 @@
+.container {
+    display: flex;
+    width: 100%;
+    max-height: 100vh;
+}
+
+.imgtit {
+    display: flex;
+    margin: 4rem;
+    align-items: center;
+
+}
+
+.imgtit .image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin: 0 2rem;
+}
+
+.imgtit .tittle h1 {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    background: linear-gradient(to bottom, #6c313d, #551033);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.imgtit .tittle h3,
+p {
+    color: aliceblue;
+}
+
+/* HOME */
+
+
+
+
+/* SERVICE */
+.contai {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.cont-ser {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.ser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgb(108, 41, 51), rgb(107, 31, 48), rgb(135, 60, 80));
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    margin: 0 1rem;
+    border-radius: 20px;
+}
+
+.ser h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+@media screen and (max-width:1010px) {
+    .ser {
+        width: 200px;
+    }
+
+    .imgtit .tittle h1 {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .container {
+        margin: 4rem 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgtit {
+        flex-direction: column;
+    }
+
+    .imgtit .image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .imgtit .tittle {
+        text-align: center;
+    }
+
+    .imgtit .tittle h1 {
+        font-size: 40px;
+    }
+
+
+    /* SERVICE HANDPHONE MODE */
+    .cont-ser {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+
+    .ser {
+        margin: 2rem 0;
+        width: 350px;
+        height: 300px;
+    }
+
+
+
+}
